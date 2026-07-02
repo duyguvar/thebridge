@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import LogoWatermark from "@/components/LogoWatermark";
+import MapLink from "@/components/MapLink";
 
 export const metadata: Metadata = {
   title: "Contact | The Bridge",
@@ -52,6 +53,14 @@ export default function ContactPage() {
                   solely to scope a potential engagement.
                 </p>
               </div>
+            </div>
+
+            <div className="mt-8 w-2/3">
+              <p className="font-semibold text-black text-sm sm:text-base">Address</p>
+              <p className="text-sm sm:text-base text-black/70 mb-3">
+                Masdar City, Abu Dhabi, UAE
+              </p>
+              <MapLink />
             </div>
           </div>
 

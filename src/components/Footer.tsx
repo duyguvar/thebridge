@@ -32,6 +32,9 @@ export default function Footer() {
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
               {tagline}
             </p>
+            <p className="mt-5 text-sm text-white/50">
+              Masdar City, Abu Dhabi, UAE
+            </p>
           </div>
 
           {columns.map((col) => (
