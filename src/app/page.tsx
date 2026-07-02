@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-black text-white overflow-hidden flex items-center h-[560px] sm:h-[620px] lg:h-[680px]">
+      <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
             GCC Defense Accelerator
@@ -17,32 +17,12 @@ export default function Home() {
             Your GCC Defense Accelerator
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
-            {tagline} We operate as an independent accelerator and PMO
-            partner — never a broker or trading house.
+            {tagline}
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <CTAButton href="/contact" variant="outline-light">
-              Request a Consultation
-            </CTAButton>
-            <CTAButton href="/solutions" variant="outline-light">
-              View Solutions
-            </CTAButton>
-          </div>
-        </div>
-
-        <div className="absolute inset-0 pointer-events-none opacity-[0.07]" aria-hidden="true">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <circle cx="1" cy="1" r="1" fill="#ffffff" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
         </div>
         <LogoWatermark
           inverted
-          className="hidden lg:block right-[-40px] top-1/2 -translate-y-1/2 w-[420px] xl:w-[520px] h-auto"
+          className="hidden lg:block right-[-40px] top-1/2 -translate-y-1/2 w-[380px] xl:w-[460px] h-auto"
         />
       </section>
 
@@ -55,9 +35,7 @@ export default function Home() {
             </p>
             <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
               The Bridge is a pure advisory and program-management
-              organization. We do not trade defense goods, broker
-              procurement, represent regulated products, or work on
-              commission. Our value is independence, technical judgment,
+              organization. Our value is independence, technical judgment,
               and execution discipline.
             </p>
           </div>

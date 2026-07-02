@@ -7,24 +7,23 @@ import { products } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Solutions | The Bridge",
   description:
-    "Advisory programs across market entry, technology intelligence, due diligence, localization, and innovation governance for the GCC defense ecosystem.",
+    "Our service portfolio — advisory programs structured by segment and capability area for the GCC defense ecosystem.",
 };
 
 export default function SolutionsPage() {
   return (
     <>
-      <section className="relative bg-black text-white overflow-hidden flex items-center h-[560px] sm:h-[620px] lg:h-[680px]">
+      <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
             Solutions
           </p>
           <h1 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            Advisory Programs Across the GCC Ecosystem
+            Our Service Portfolio
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
-            Nineteen focused engagement models spanning market entry, technology
-            intelligence, due diligence, localization, and innovation
-            governance — scoped to value and outcomes, not transactions.
+            Advisory services structured by segment and capability area —
+            scoped to value and outcomes, not transactions.
           </p>
         </div>
         <LogoWatermark

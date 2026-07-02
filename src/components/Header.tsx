@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const navLinks = [
   { href: "/about", label: "About" },
-  { href: "/segments/international", label: "International" },
+  { href: "/segments/international", label: "Companies" },
   { href: "/segments/gcc-organizations", label: "GCC Organizations" },
   { href: "/segments/government", label: "Government" },
   { href: "/solutions", label: "Solutions" },
