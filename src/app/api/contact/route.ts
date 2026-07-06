@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   const { name, organization, email, segment, message } = await request.json();
@@ -11,34 +11,41 @@ export async function POST(request: Request) {
     );
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  const user = process.env.GMAIL_USER;
+  const pass = process.env.GMAIL_APP_PASSWORD;
+  if (!user || !pass) {
     return NextResponse.json(
       { error: "Email service is not configured." },
       { status: 500 }
     );
   }
 
-  const resend = new Resend(apiKey);
-
-  const { error } = await resend.emails.send({
-    from: process.env.RESEND_FROM_EMAIL ?? "The Bridge Website <onboarding@resend.dev>",
-    to: process.env.RESEND_TO_EMAIL ?? "contact@thebridgeconsulting.ae",
-    replyTo: email,
-    subject: `New consultation request from ${name} (${organization})`,
-    text: [
-      `Name: ${name}`,
-      `Organization: ${organization}`,
-      `Email: ${email}`,
-      `Segment: ${segment}`,
-      "",
-      "Message:",
-      message,
-    ].join("\n"),
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: { user, pass },
   });
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 502 });
+  try {
+    await transporter.sendMail({
+      from: user,
+      to: process.env.CONTACT_TO_EMAIL ?? user,
+      replyTo: email,
+      subject: `New consultation request from ${name} (${organization})`,
+      text: [
+        `Name: ${name}`,
+        `Organization: ${organization}`,
+        `Email: ${email}`,
+        `Segment: ${segment}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n"),
+    });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : "Send failed";
+    return NextResponse.json({ error: msg }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true });
