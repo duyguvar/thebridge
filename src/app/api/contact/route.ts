@@ -31,6 +31,7 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: user,
       to: process.env.CONTACT_TO_EMAIL ?? user,
+      cc: process.env.CONTACT_CC_EMAIL ?? "gokerakinci@thebridgeconsulting.ae",
       replyTo: email,
       subject: `New consultation request from ${name} (${organization})`,
       text: [
