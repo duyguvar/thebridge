@@ -9,10 +9,12 @@ const segmentOptions = [
   "Other",
 ];
 
-export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+type Status = "idle" | "submitting" | "success" | "error";
 
-  if (submitted) {
+export default function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  if (status === "success") {
     return (
       <div className="border border-black/15 p-10 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-black/40 mb-4">
@@ -28,9 +30,25 @@ export default function ContactForm() {
 
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setStatus("submitting");
+
+        const form = e.currentTarget;
+        const data = Object.fromEntries(new FormData(form).entries());
+
+        try {
+          const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+
+          if (!res.ok) throw new Error("Request failed");
+          setStatus("success");
+        } catch {
+          setStatus("error");
+        }
       }}
       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
     >
@@ -103,12 +121,20 @@ export default function ContactForm() {
         />
       </label>
 
+      {status === "error" && (
+        <p className="sm:col-span-2 text-sm text-black/70">
+          Something went wrong sending your message. Please try again, or
+          email us directly at contact@thebridgeconsulting.ae.
+        </p>
+      )}
+
       <div className="sm:col-span-2">
         <button
           type="submit"
-          className="inline-flex items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-black text-white hover:bg-bridge-charcoal transition-colors"
+          disabled={status === "submitting"}
+          className="inline-flex items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-black text-white hover:bg-bridge-charcoal transition-colors disabled:opacity-50"
         >
-          Request a Consultation
+          {status === "submitting" ? "Sending…" : "Request a Consultation"}
         </button>
       </div>
     </form>
