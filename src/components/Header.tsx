@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/segments/government", label: "Government" },
   { href: "/solutions", label: "Solutions" },
   { href: "/domains", label: "Domains" },
+  { href: "/register", label: "Register" },
 ];
 
 export default function Header() {
