@@ -7,7 +7,6 @@ import Logo from "./Logo";
 const navLinks = [
   { href: "/about", label: "About" },
   { href: "/solutions", label: "Solutions" },
-  { href: "/domains", label: "Domains" },
   { href: "/register", label: "Register" },
 ];
 
@@ -17,19 +16,21 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/10">
       <div className="mx-auto max-w-8xl px-6 lg:px-10 h-20 flex items-center justify-between">
-        <Logo />
+        <div className="flex items-center gap-12">
+          <Logo />
 
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-xs font-medium uppercase tracking-[0.15em] text-black/70 hover:text-black transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+          <nav className="hidden lg:flex items-center gap-8 mt-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-xs font-medium uppercase tracking-[0.15em] text-black/70 hover:text-black transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <Link
           href="/contact"

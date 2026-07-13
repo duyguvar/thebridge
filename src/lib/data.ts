@@ -366,6 +366,16 @@ export const domains: Domain[] = [
       "Munitions testing and qualification support",
     ],
   },
+  {
+    key: "ai",
+    name: "AI TRANSFORMATION",
+    description: "AI-enabled transformation capability areas spanning applied adoption, data readiness, and decision-support systems.",
+    capabilities: [
+      "AI/ML capability building and adoption roadmaps",
+      "Data readiness and governance for AI-enabled programs",
+      "AI-enabled decision-support and analytics integration",
+    ],
+  },
 ];
 
 export const serviceBoundaryStatement =

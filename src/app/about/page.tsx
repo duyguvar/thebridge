@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
 import SectionHeading from "@/components/SectionHeading";
 import LogoWatermark from "@/components/LogoWatermark";
-import { serviceBoundaryStatement } from "@/lib/data";
+import { domains, serviceBoundaryStatement } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "About | The Bridge",
@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: "Technical Grounding",
-    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across LAND, AIR, NAVY, C4I, and MUNITIONS capability areas.",
+    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across LAND, AIR, NAVY, C4I, MUNITIONS, and AI Transformation capability areas.",
   },
   {
     title: "Continuity",
@@ -89,6 +89,37 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="domains" className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-24 scroll-mt-24">
+        <SectionHeading
+          eyebrow="Capability Areas"
+          title="Six Domains of Expertise"
+          description="Our advisory work spans the full breadth of defense capability areas — grounded in technical understanding, not sales targets."
+        />
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10">
+          {domains.map((domain) => (
+            <div key={domain.key} className="bg-white p-8 sm:p-10">
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-black/40">
+                Domain
+              </span>
+              <h3 className="mt-3 text-2xl font-semibold uppercase tracking-[0.1em]">
+                {domain.name}
+              </h3>
+              <p className="mt-4 text-sm sm:text-base leading-relaxed text-black/60">
+                {domain.description}
+              </p>
+              <ul className="mt-6 space-y-3 pt-6 border-t border-black/10">
+                {domain.capabilities.map((cap) => (
+                  <li key={cap} className="flex gap-3 text-sm text-black/70">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-black" />
+                    {cap}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 

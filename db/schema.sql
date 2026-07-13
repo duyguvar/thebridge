@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS clients (
   name TEXT NOT NULL,
   organization TEXT NOT NULL,
   email TEXT NOT NULL,
+  phone TEXT,
   country TEXT NOT NULL,
   details JSONB NOT NULL DEFAULT '{}'::jsonb
 );

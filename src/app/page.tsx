@@ -30,9 +30,6 @@ export default function Home() {
       <section className="border-b border-black/10">
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-16 sm:py-20">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-black/50 mb-4">
-              Advisory, Not Brokerage
-            </p>
             <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
               The Bridge is a pure advisory and program-management
               organization. Our value is independence, technical judgment,
@@ -81,12 +78,12 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-28">
           <SectionHeading
             eyebrow="Capability Areas"
-            title="Five Domains of Expertise"
+            title="Six Domains of Expertise"
             description="Our advisory work spans the full breadth of defense capability areas — grounded in technical understanding, not sales targets."
             inverted
           />
 
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-white/10">
+          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/10">
             {domains.map((domain) => (
               <div key={domain.key} className="bg-bridge-charcoal p-6 sm:p-7">
                 <h3 className="text-lg font-semibold uppercase tracking-[0.15em]">
@@ -100,7 +97,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <CTAButton href="/domains" variant="outline-light">
+            <CTAButton href="/about#domains" variant="outline-light">
               Explore Domains
             </CTAButton>
           </div>

@@ -10,8 +10,9 @@ interface ClientRow {
   name: string;
   organization: string;
   email: string;
+  phone: string | null;
   country: string;
-  details: Record<string, string>;
+  details: Record<string, unknown>;
 }
 
 const segmentLabels: Record<string, string> = Object.fromEntries(
@@ -71,6 +72,7 @@ export default async function AdminClientsPage({
               <th className="p-3 font-semibold whitespace-nowrap">Name</th>
               <th className="p-3 font-semibold whitespace-nowrap">Organization</th>
               <th className="p-3 font-semibold whitespace-nowrap">Email</th>
+              <th className="p-3 font-semibold whitespace-nowrap">Phone</th>
               <th className="p-3 font-semibold whitespace-nowrap">Country</th>
               <th className="p-3 font-semibold whitespace-nowrap">Details</th>
             </tr>
@@ -87,6 +89,7 @@ export default async function AdminClientsPage({
                 <td className="p-3 whitespace-nowrap">{row.name}</td>
                 <td className="p-3 whitespace-nowrap">{row.organization}</td>
                 <td className="p-3 whitespace-nowrap">{row.email}</td>
+                <td className="p-3 whitespace-nowrap">{row.phone ?? "—"}</td>
                 <td className="p-3 whitespace-nowrap">{row.country}</td>
                 <td className="p-3 max-w-xs">
                   <pre className="whitespace-pre-wrap text-xs text-black/70">
@@ -97,7 +100,7 @@ export default async function AdminClientsPage({
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={7} className="p-6 text-center text-black/50">
+                <td colSpan={8} className="p-6 text-center text-black/50">
                   No registrations yet.
                 </td>
               </tr>

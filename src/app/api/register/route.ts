@@ -5,33 +5,38 @@ import { sql } from "@/lib/db";
 const VALID_SEGMENTS = ["international", "gcc", "government"] as const;
 type SegmentId = (typeof VALID_SEGMENTS)[number];
 
-function buildDetails(segment: SegmentId, body: Record<string, string>) {
+function buildDetails(segment: SegmentId, body: Record<string, unknown>) {
+  const str = (v: unknown) => (typeof v === "string" ? v : "");
+  const arr = (v: unknown): string[] =>
+    Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
+
   if (segment === "international") {
     return {
-      capabilityArea: body.capabilityArea ?? "",
-      productDescription: body.productDescription ?? "",
+      capabilityAreas: arr(body.capabilityAreas),
+      productDescription: str(body.productDescription),
     };
   }
   if (segment === "gcc") {
     return {
-      sourcingCategory: body.sourcingCategory ?? "",
-      preferredRegion: body.preferredRegion ?? "",
+      sourcingCategories: arr(body.sourcingCategories),
+      preferredRegions: arr(body.preferredRegions),
     };
   }
   return {
-    institutionType: body.institutionType ?? "",
-    priorityArea: body.priorityArea ?? "",
+    institutionTypes: arr(body.institutionTypes),
+    priorityAreas: arr(body.priorityAreas),
   };
 }
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { name, organization, email, country, segment } = body;
+  const { name, organization, email, phone, country, segment } = body;
 
   if (
     !name ||
     !organization ||
     !email ||
+    !phone ||
     !country ||
     !VALID_SEGMENTS.includes(segment)
   ) {
@@ -45,8 +50,8 @@ export async function POST(request: Request) {
 
   try {
     await sql`
-      INSERT INTO clients (segment, name, organization, email, country, details)
-      VALUES (${segment}, ${name}, ${organization}, ${email}, ${country}, ${sql.json(details)})
+      INSERT INTO clients (segment, name, organization, email, phone, country, details)
+      VALUES (${segment}, ${name}, ${organization}, ${email}, ${phone}, ${country}, ${sql.json(details)})
     `;
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Database error";
@@ -75,6 +80,7 @@ export async function POST(request: Request) {
           `Name: ${name}`,
           `Organization: ${organization}`,
           `Email: ${email}`,
+          `Phone: ${phone}`,
           `Country: ${country}`,
           "",
           "Details:",
