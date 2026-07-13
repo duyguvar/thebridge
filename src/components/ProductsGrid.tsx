@@ -5,14 +5,7 @@ import type { Product, SegmentId } from "@/lib/data";
 import { segments } from "@/lib/data";
 
 type FilterKey = "all" | SegmentId | "cross";
-
-const filters: { key: FilterKey; label: string }[] = [
-  { key: "all", label: "All Solutions" },
-  { key: "international", label: "Companies" },
-  { key: "gcc", label: "GCC Organizations" },
-  { key: "government", label: "Government" },
-  { key: "cross", label: "Cross-Segment" },
-];
+type View = { mode: "picker" } | { mode: "results"; filter: FilterKey };
 
 const groupOrder: FilterKey[] = ["international", "gcc", "government", "cross"];
 
@@ -47,10 +40,11 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export default function ProductsGrid({ products }: { products: Product[] }) {
-  const [active, setActive] = useState<FilterKey>("all");
+  const [view, setView] = useState<View>({ mode: "picker" });
 
   const groups = useMemo(() => {
-    const visibleKeys = active === "all" ? groupOrder : [active];
+    if (view.mode !== "results") return [];
+    const visibleKeys = view.filter === "all" ? groupOrder : [view.filter];
     return visibleKeys
       .map((key) => ({
         key,
@@ -59,28 +53,70 @@ export default function ProductsGrid({ products }: { products: Product[] }) {
         ),
       }))
       .filter((group) => group.products.length > 0);
-  }, [active, products]);
+  }, [view, products]);
+
+  if (view.mode === "picker") {
+    return (
+      <div className="animate-fade-in">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-black/40 mb-4">
+            Get Started
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-semibold uppercase tracking-wide">
+            Which Best Describes You?
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10">
+          {segments.map((s) => (
+            <button
+              key={s.id}
+              type="button"
+              onClick={() => setView({ mode: "results", filter: s.id })}
+              className="group bg-white p-8 sm:p-10 text-left flex flex-col justify-between min-h-[280px] hover:bg-black transition-colors duration-300"
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-black/40 group-hover:text-white/50 transition-colors">
+                  Segment
+                </p>
+                <h3 className="mt-4 text-xl sm:text-2xl font-semibold uppercase tracking-wide text-black group-hover:text-white transition-colors">
+                  {s.shortName}
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-black/60 group-hover:text-white/70 transition-colors">
+                  {s.tagline}
+                </p>
+              </div>
+              <span className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-black group-hover:text-white transition-colors">
+                View Solutions &rarr;
+              </span>
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <button
+            type="button"
+            onClick={() => setView({ mode: "results", filter: "all" })}
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-black/50 hover:text-black underline underline-offset-4 transition-colors"
+          >
+            View All Solutions
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div>
-      <div className="flex flex-wrap items-center gap-3">
-        {filters.map((f) => (
-          <button
-            key={f.key}
-            type="button"
-            onClick={() => setActive(f.key)}
-            className={`px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] border transition-colors ${
-              active === f.key
-                ? "bg-black text-white border-black"
-                : "bg-white text-black/70 border-black/20 hover:border-black"
-            }`}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
+    <div key={view.filter} className="animate-fade-in">
+      <button
+        type="button"
+        onClick={() => setView({ mode: "picker" })}
+        className="mb-10 text-xs font-semibold uppercase tracking-[0.2em] text-black/50 hover:text-black transition-colors"
+      >
+        &larr; Choose a Different Segment
+      </button>
 
-      <div className="mt-14 space-y-16">
+      <div className="space-y-16">
         {groups.map((group) => (
           <div key={group.key}>
             <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-8">
@@ -103,7 +139,7 @@ export default function ProductsGrid({ products }: { products: Product[] }) {
       </div>
 
       {groups.length === 0 && (
-        <p className="mt-12 text-center text-black/50 text-sm">
+        <p className="mt-4 text-center text-black/50 text-sm">
           No solutions match this filter.
         </p>
       )}
