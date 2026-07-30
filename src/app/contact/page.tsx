@@ -4,9 +4,9 @@ import LogoWatermark from "@/components/LogoWatermark";
 import MapLink from "@/components/MapLink";
 
 export const metadata: Metadata = {
-  title: "Contact | The Bridge",
+  title: "Contact | The Bridge Consulting Group",
   description:
-    "Request a consultation with The Bridge to discuss your GCC defense priorities.",
+    "Request a consultation with The Bridge Consulting Group to discuss your GCC engineering, AI, aviation, or defense priorities.",
 };
 
 export default function ContactPage() {

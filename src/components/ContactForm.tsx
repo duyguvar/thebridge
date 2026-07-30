@@ -21,8 +21,8 @@ export default function ContactForm() {
           Message Received
         </p>
         <p className="text-lg font-medium">
-          Thank you for reaching out. A member of The Bridge team will
-          respond shortly.
+          Thank you for reaching out. A member of The Bridge Consulting
+          Group team will respond shortly.
         </p>
       </div>
     );

@@ -68,8 +68,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40">
-          <p>&copy; {new Date().getFullYear()} The Bridge. All rights reserved.</p>
-          <p>Defense Accelerator &mdash; GCC</p>
+          <p>&copy; {new Date().getFullYear()} The Bridge Consulting Group. All rights reserved.</p>
+          <p>Engineering, AI &amp; Aviation Advisory &mdash; GCC</p>
         </div>
       </div>
     </footer>

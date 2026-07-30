@@ -5,7 +5,7 @@ import { segments } from "@/lib/data";
 const segment = segments.find((s) => s.id === "gcc")!;
 
 export const metadata: Metadata = {
-  title: "GCC Defense Organizations | The Bridge",
+  title: "GCC Defense Organizations | The Bridge Consulting Group",
   description: segment.summary,
 };
 

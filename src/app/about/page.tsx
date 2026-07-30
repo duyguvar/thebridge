@@ -5,9 +5,9 @@ import LogoWatermark from "@/components/LogoWatermark";
 import { domains, serviceBoundaryStatement } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About | The Bridge",
+  title: "About | The Bridge Consulting Group",
   description:
-    "The Bridge is an independent GCC defense accelerator — mission, mandate, and service boundary.",
+    "The Bridge Consulting Group is an independent GCC advisory firm spanning engineering, AI, aviation, and defense — mission, mandate, and service boundary.",
 };
 
 const principles = [
@@ -31,10 +31,10 @@ export default function AboutPage() {
       <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
-            About The Bridge
+            About The Bridge Consulting Group
           </p>
           <h1 className="max-w-2xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            An Independent GCC Defense Accelerator
+            An Independent GCC Advisory Group
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
             We connect global technology, regional industry, and government
@@ -52,10 +52,11 @@ export default function AboutPage() {
           <div>
             <SectionHeading eyebrow="Mission" title="Why We Exist" />
             <p className="mt-6 text-sm sm:text-base leading-relaxed text-black/70">
-              The GCC defense ecosystem sits at the intersection of global
-              technology, regional industrial ambition, and national
-              priorities. The Bridge exists to make that intersection
-              navigable — providing independent, technically grounded
+              The GCC engineering, AI, aviation, and defense ecosystem sits
+              at the intersection of global technology, regional industrial
+              ambition, and national priorities. The Bridge Consulting Group
+              exists to make that intersection navigable — providing
+              independent, technically grounded
               advisory support to the organizations shaping it, without the
               conflicts of interest that come from trading in the products
               being evaluated.
@@ -64,8 +65,8 @@ export default function AboutPage() {
           <div>
             <SectionHeading eyebrow="Vision" title="Where We're Headed" />
             <p className="mt-6 text-sm sm:text-base leading-relaxed text-black/70">
-              We aim to be the standing advisory layer of the GCC defense
-              innovation ecosystem — trusted by international entrants,
+              We aim to be the standing advisory layer of the GCC innovation
+              ecosystem — trusted by international entrants,
               regional industry, and government institutions alike, precisely
               because we represent none of their competing interests and
               all of their shared need for sound, independent judgment.
@@ -96,7 +97,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Capability Areas"
           title="Six Domains of Expertise"
-          description="Our advisory work spans the full breadth of defense capability areas — grounded in technical understanding, not sales targets."
+          description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
         />
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10">
           {domains.map((domain) => (

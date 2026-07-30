@@ -379,7 +379,7 @@ export const domains: Domain[] = [
 ];
 
 export const serviceBoundaryStatement =
-  "The Bridge provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
+  "The Bridge Consulting Group provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
 
 export const tagline =
-  "The Bridge is a GCC defense accelerator connecting global technology providers, regional industry needs, and government priorities.";
+  "The Bridge Consulting Group is a GCC advisory firm spanning engineering, AI, aviation, and defense — connecting global technology providers, regional industry needs, and government priorities.";

@@ -154,7 +154,7 @@ export default function RegisterForm() {
           Registration Received
         </p>
         <p className="text-lg font-medium">
-          Thank you for registering with The Bridge.
+          Thank you for registering with The Bridge Consulting Group.
           <br />
           Our team will review your submission and follow up.
         </p>

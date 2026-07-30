@@ -11,10 +11,10 @@ export default function Home() {
       <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
-            GCC Defense Accelerator
+            GCC Advisory Group
           </p>
           <h1 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            Your GCC Defense Accelerator
+            Engineering, AI &amp; Aviation Consulting for the GCC
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
             {tagline}
@@ -31,9 +31,9 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-16 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
-              The Bridge is a pure advisory and program-management
-              organization. Our value is independence, technical judgment,
-              and execution discipline.
+              The Bridge Consulting Group is a pure advisory and
+              program-management organization. Our value is independence,
+              technical judgment, and execution discipline.
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Capability Areas"
             title="Six Domains of Expertise"
-            description="Our advisory work spans the full breadth of defense capability areas — grounded in technical understanding, not sales targets."
+            description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
             inverted
           />
 
@@ -107,11 +107,12 @@ export default function Home() {
       {/* CTA */}
       <section className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-28 text-center">
         <h2 className="text-2xl sm:text-3xl font-semibold uppercase tracking-wide max-w-2xl mx-auto">
-          Ready to Discuss Your GCC Defense Priorities?
+          Ready to Discuss Your Next GCC Engagement?
         </h2>
         <p className="mt-5 max-w-xl mx-auto text-black/60 leading-relaxed">
           Every engagement begins with a conversation. Reach out to discuss
-          where your organization stands and how The Bridge can help.
+          where your organization stands and how The Bridge Consulting Group
+          can help.
         </p>
         <div className="mt-8 flex justify-center">
           <CTAButton href="/contact">Contact Us</CTAButton>
