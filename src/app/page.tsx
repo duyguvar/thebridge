@@ -14,7 +14,7 @@ export default function Home() {
             GCC Consultancy Group
           </p>
           <h1 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            Engineering, AI, Aviation &amp; Business Consulting for the GCC
+            AI, Aviation, Engineering &amp; Business Consulting for the GCC
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
             {tagline}
