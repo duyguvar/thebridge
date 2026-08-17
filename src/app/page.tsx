@@ -26,19 +26,6 @@ export default function Home() {
         />
       </section>
 
-      {/* Positioning statement */}
-      <section className="border-b border-black/10">
-        <div className="mx-auto max-w-8xl px-6 lg:px-10 py-16 sm:py-20">
-          <div className="max-w-3xl">
-            <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
-              The Bridge Consulting and Advisory Limited is a pure consultancy and
-              program-management organization. Our value is independence,
-              technical judgment, and execution discipline.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Segments */}
       <section className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-28">
         <SectionHeading

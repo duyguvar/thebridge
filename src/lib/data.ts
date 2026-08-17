@@ -354,4 +354,4 @@ export const serviceBoundaryStatement =
   "The Bridge Consulting and Advisory Limited provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
 
 export const tagline =
-  "The Bridge Consulting and Advisory Limited is a GCC consulting firm spanning engineering, AI, aviation, and business consultancy — connecting global technology providers, regional industry needs, and government priorities.";
+  "The Bridge Consulting and Advisory Limited is a pure GCC consultancy — guided by independence, technical judgment, and execution discipline.";
