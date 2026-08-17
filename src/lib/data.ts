@@ -37,7 +37,7 @@ export const segments: Segment[] = [
       "Assess market readiness and positioning before commitments are made",
       "Map the regulatory, industrial, and relationship landscape specific to your capability area",
       "Build a phased, milestone-based entry plan aligned to regional priorities",
-      "Provide continuous PMO-style advisory support as the relationship matures",
+      "Provide continuous PMO-style consultancy support as the relationship matures",
     ],
   },
   {
@@ -45,7 +45,7 @@ export const segments: Segment[] = [
     slug: "gcc-organizations",
     shortName: "GCC Organizations",
     name: "GCC Organizations",
-    tagline: "Independent, technically grounded advisory for the region's industrial base.",
+    tagline: "Independent, technically grounded consultancy for the region's industrial base.",
     summary:
       "For GCC-based technology companies, systems integrators, industrial contractors, R&D centers, and investment arms building capability, evaluating technology, and derisking programs.",
     audience: [
@@ -64,7 +64,7 @@ export const segments: Segment[] = [
       "Screen and profile global technology and supplier options against your actual requirements",
       "Conduct independent readiness checks and due diligence before commitment",
       "Design localization and industrialization pathways grounded in technical reality",
-      "Step in with program recovery and execution advisory when initiatives lose momentum",
+      "Step in with program recovery and execution consultancy when initiatives lose momentum",
     ],
   },
   {
@@ -72,7 +72,7 @@ export const segments: Segment[] = [
     slug: "government",
     shortName: "Government & Public Sector",
     name: "Government & Public Sector",
-    tagline: "Umbrella advisory support for institutions shaping national technology and industrial innovation.",
+    tagline: "Umbrella consultancy support for institutions shaping national technology and industrial innovation.",
     summary:
       "For ministries, free zones, economic development authorities, and innovation offices designing the frameworks that govern industry engagement, innovation competitions, and pilots.",
     audience: [
@@ -82,13 +82,13 @@ export const segments: Segment[] = [
       "Innovation and technology offices",
     ],
     challenges: [
-      "Need for an independent advisory partner not aligned to any single vendor or bidder",
+      "Need for an independent consulting partner not aligned to any single vendor or bidder",
       "Innovation competitions and challenges that lack rigorous design or evaluation frameworks",
       "Difficulty assessing supplier and startup readiness at scale",
       "Pilots and demonstrations that lack structured governance and success criteria",
     ],
     approach: [
-      "Establish a continuous, umbrella advisory relationship across initiatives",
+      "Establish a continuous, umbrella consulting relationship across initiatives",
       "Design and run structured innovation challenges and competitions",
       "Apply consistent, defensible readiness frameworks to suppliers and startups",
       "Govern pilots and demonstrations from design through evaluation",
@@ -136,8 +136,8 @@ export const products: Product[] = [
     slug: "bridgepmo",
     name: "BridgePMO™",
     segments: ["international"],
-    category: "Continuous Advisory Support",
-    summary: "Continuous advisory and program management support that keeps your GCC market-entry and expansion efforts on track over time.",
+    category: "Continuous Consultancy Support",
+    summary: "Continuous consultancy and program management support that keeps your GCC market-entry and expansion efforts on track over time.",
     scope: [
       "Ongoing coordination across stakeholders and workstreams",
       "Milestone tracking and risk management",
@@ -198,11 +198,11 @@ export const products: Product[] = [
     slug: "bridgejoint",
     name: "BridgeJoint™",
     segments: ["gcc"],
-    category: "JV Setup Advisory",
-    summary: "Joint-venture setup advisory that structures partnerships between regional and international organizations from term sheet through governance.",
+    category: "JV Setup Consultancy",
+    summary: "Joint-venture setup consultancy that structures partnerships between regional and international organizations from term sheet through governance.",
     scope: [
       "Partner identification and fit assessment",
-      "JV structure, governance, and term-sheet advisory",
+      "JV structure, governance, and term-sheet consultancy",
       "Post-formation integration support",
     ],
   },
@@ -210,8 +210,8 @@ export const products: Product[] = [
     slug: "bridgerecover",
     name: "BridgeRecover™",
     segments: ["gcc"],
-    category: "Program Recovery Advisory",
-    summary: "Program recovery and execution advisory for initiatives that have stalled, drifted, or lost stakeholder confidence.",
+    category: "Program Recovery Consultancy",
+    summary: "Program recovery and execution consultancy for initiatives that have stalled, drifted, or lost stakeholder confidence.",
     scope: [
       "Independent program diagnostic",
       "Root-cause analysis and recovery plan",
@@ -223,11 +223,11 @@ export const products: Product[] = [
     name: "BridgeInnova™",
     segments: ["gcc"],
     category: "University-Partnered R&D / AI",
-    summary: "University-partnered R&D and AI advisory that connects regional organizations with academic research capacity for applied innovation.",
+    summary: "University-partnered R&D and AI consultancy that connects regional organizations with academic research capacity for applied innovation.",
     scope: [
       "Academic partner identification and matchmaking",
       "Applied R&D and AI project scoping",
-      "Joint research governance and IP framework advisory",
+      "Joint research governance and IP framework consultancy",
     ],
   },
 
@@ -236,10 +236,10 @@ export const products: Product[] = [
     slug: "bridgegov",
     name: "BridgeGov™",
     segments: ["government"],
-    category: "Long-Term Advisory",
-    summary: "A long-term, umbrella advisory relationship providing continuous, independent support across an institution's technology and industrial priorities.",
+    category: "Long-Term Consultancy",
+    summary: "A long-term, umbrella consulting relationship providing continuous, independent support across an institution's technology and industrial priorities.",
     scope: [
-      "Standing advisory relationship across multiple initiatives",
+      "Standing consulting relationship across multiple initiatives",
       "Cross-initiative coordination and continuity",
       "Independent, vendor-neutral counsel",
     ],
@@ -272,8 +272,8 @@ export const products: Product[] = [
     slug: "bridgelocal",
     name: "BridgeLocal™",
     segments: ["government"],
-    category: "Government Localization Advisory",
-    summary: "Localization advisory for government and public-sector institutions, grounding industrial and workforce development plans in technical reality.",
+    category: "Government Localization Consultancy",
+    summary: "Localization consultancy for government and public-sector institutions, grounding industrial and workforce development plans in technical reality.",
     scope: [
       "Localization pathway design by capability area",
       "Industrial base and supply chain assessment",
@@ -338,13 +338,13 @@ export const domains: Domain[] = [
     ],
   },
   {
-    key: "management-business",
-    name: "MANAGEMENT & BUSINESS CONSULTANCY AND SOLUTIONS",
-    description: "Management and business advisory capability areas spanning market entry, partnership structuring, institutional strategy, and solutions design.",
+    key: "business-management",
+    name: "BUSINESS & MANAGEMENT CONSULTANCY",
+    description: "Business and management consultancy capability areas spanning market entry, partnership structuring, and institutional strategy.",
     capabilities: [
       "Market entry and localization strategy",
       "Joint-venture and partnership governance",
-      "Institutional and program advisory",
+      "Institutional and program consultancy",
       "Program and solutions design across engagements",
     ],
   },
@@ -354,4 +354,4 @@ export const serviceBoundaryStatement =
   "The Bridge Consulting and Advisory Limited provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
 
 export const tagline =
-  "The Bridge Consulting and Advisory Limited is a GCC advisory firm spanning engineering, AI, aviation, and business consultancy — connecting global technology providers, regional industry needs, and government priorities.";
+  "The Bridge Consulting and Advisory Limited is a GCC consulting firm spanning engineering, AI, aviation, and business consultancy — connecting global technology providers, regional industry needs, and government priorities.";

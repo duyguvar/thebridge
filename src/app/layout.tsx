@@ -11,7 +11,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "The Bridge Consulting and Advisory Limited | Engineering, AI, Aviation & Business Advisory",
+  title: "The Bridge Consulting and Advisory Limited | Engineering, AI, Aviation & Business Consultancy",
   description: tagline,
 };
 

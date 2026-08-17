@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
-            GCC Advisory Group
+            GCC Consultancy Group
           </p>
           <h1 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
             Engineering, AI, Aviation &amp; Business Consulting for the GCC
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-16 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
-              The Bridge Consulting and Advisory Limited is a pure advisory and
+              The Bridge Consulting and Advisory Limited is a pure consultancy and
               program-management organization. Our value is independence,
               technical judgment, and execution discipline.
             </p>
@@ -79,7 +79,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Capability Areas"
             title="Three Domains of Expertise"
-            description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
+            description="Our consultancy work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
             inverted
           />
 

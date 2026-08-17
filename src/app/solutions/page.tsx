@@ -7,7 +7,7 @@ import { products } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Solutions | The Bridge Consulting and Advisory Limited",
   description:
-    "Our service portfolio — advisory programs structured by segment and capability area for the GCC technology and industrial ecosystem.",
+    "Our service portfolio — consultancy programs structured by segment and capability area for the GCC technology and industrial ecosystem.",
 };
 
 export default function SolutionsPage() {
@@ -22,7 +22,7 @@ export default function SolutionsPage() {
             Our Service Portfolio
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
-            Advisory services structured by segment and capability area —
+            Consultancy services structured by segment and capability area —
             scoped to value and outcomes, not transactions.
           </p>
         </div>

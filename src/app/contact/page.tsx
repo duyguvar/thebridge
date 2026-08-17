@@ -7,7 +7,7 @@ import MapLink from "@/components/MapLink";
 export const metadata: Metadata = {
   title: "Contact | The Bridge Consulting and Advisory Limited",
   description:
-    "Request a consultation with The Bridge Consulting and Advisory Limited to discuss your GCC engineering, AI, aviation, or business advisory priorities.",
+    "Request a consultation with The Bridge Consulting and Advisory Limited to discuss your GCC engineering, AI, aviation, or business consultancy priorities.",
 };
 
 export default function ContactPage() {

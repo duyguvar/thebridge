@@ -7,7 +7,7 @@ import { domains, serviceBoundaryStatement } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About | The Bridge Consulting and Advisory Limited",
   description:
-    "The Bridge Consulting and Advisory Limited is an independent GCC advisory firm spanning engineering, AI, aviation, and business consultancy — mission, mandate, and service boundary.",
+    "The Bridge Consulting and Advisory Limited is an independent GCC consultancy firm spanning engineering, AI, aviation, and business consultancy — mission, mandate, and service boundary.",
 };
 
 const principles = [
@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: "Technical Grounding",
-    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across AI, Aviation & Engineering, and Management & Business Consultancy and Solutions capability areas.",
+    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across AI, Aviation & Engineering, and Business & Management Consultancy capability areas.",
   },
   {
     title: "Continuity",
@@ -34,7 +34,7 @@ export default function AboutPage() {
             About The Bridge Consulting and Advisory Limited
           </p>
           <h1 className="max-w-2xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            An Independent GCC Advisory Group
+            An Independent GCC Consultancy Group
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
             We connect global technology, regional industry, and government
@@ -57,7 +57,7 @@ export default function AboutPage() {
               ambition, and national priorities. The Bridge Consulting and Advisory Limited
               exists to make that intersection navigable — providing
               independent, technically grounded
-              advisory support to the organizations shaping it, without the
+              consultancy support to the organizations shaping it, without the
               conflicts of interest that come from trading in the products
               being evaluated.
             </p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
           <div>
             <SectionHeading eyebrow="Vision" title="Where We're Headed" />
             <p className="mt-6 text-sm sm:text-base leading-relaxed text-black/70">
-              We aim to be the standing advisory layer of the GCC innovation
+              We aim to be the standing consultancy layer of the GCC innovation
               ecosystem — trusted by international entrants,
               regional industry, and government institutions alike, precisely
               because we represent none of their competing interests and
@@ -97,7 +97,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Capability Areas"
           title="Three Domains of Expertise"
-          description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
+          description="Our consultancy work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
         />
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10">
           {domains.map((domain) => (

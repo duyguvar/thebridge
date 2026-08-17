@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} The Bridge Consulting and Advisory Limited. All rights reserved.</p>
-          <p>Engineering, AI, Aviation &amp; Business Advisory &mdash; GCC</p>
+          <p>Engineering, AI, Aviation &amp; Business Consultancy &mdash; GCC</p>
         </div>
       </div>
     </footer>

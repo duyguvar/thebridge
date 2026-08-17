@@ -14,7 +14,7 @@ const enSections = [
   {
     title: "1. Introduction",
     body: [
-      "The Bridge Consulting and Advisory Limited (\"The Bridge,\" \"we,\" \"us,\" or \"our\") is a GCC advisory firm licensed in Masdar City, Abu Dhabi, United Arab Emirates. This Privacy Policy explains how we collect, use, disclose, and protect personal data when you visit thebridgeconsulting.ae, register your organization with us, submit a contact inquiry, or otherwise interact with us.",
+      "The Bridge Consulting and Advisory Limited (\"The Bridge,\" \"we,\" \"us,\" or \"our\") is a GCC consultancy firm licensed in Masdar City, Abu Dhabi, United Arab Emirates. This Privacy Policy explains how we collect, use, disclose, and protect personal data when you visit thebridgeconsulting.ae, register your organization with us, submit a contact inquiry, or otherwise interact with us.",
       "This Policy is issued in accordance with UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data (\"PDPL\"), Turkish Law No. 6698 on the Protection of Personal Data (\"KVKK\"), and, where applicable to data subjects in the European Economic Area, the General Data Protection Regulation (\"GDPR\").",
     ],
   },
@@ -44,8 +44,8 @@ const enSections = [
       "We process your personal data for the following purposes, on the legal bases indicated:",
     ],
     list: [
-      "To respond to inquiries and provide advisory information you request (legal basis: performance of pre-contractual steps taken at your request).",
-      "To evaluate and process client registrations, and to route them to the appropriate advisory program (legal basis: performance of pre-contractual steps / legitimate interest in operating our advisory business).",
+      "To respond to inquiries and provide the consultancy information you request (legal basis: performance of pre-contractual steps taken at your request).",
+      "To evaluate and process client registrations, and to route them to the appropriate consultancy program (legal basis: performance of pre-contractual steps / legitimate interest in operating our consultancy business).",
       "To maintain records of registrations and correspondence for our internal administration (legal basis: legitimate interest).",
       "To comply with applicable legal, regulatory, and licensing obligations in the UAE (legal basis: legal obligation).",
     ],
