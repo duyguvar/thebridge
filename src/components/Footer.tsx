@@ -18,6 +18,7 @@ const columns = [
       { href: "/register", label: "Register" },
       { href: "/about", label: "About" },
       { href: "/contact", label: "Contact" },
+      { href: "/privacy-policy", label: "Privacy Policy" },
     ],
   },
 ];
@@ -68,8 +69,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/40">
-          <p>&copy; {new Date().getFullYear()} The Bridge Consulting Group. All rights reserved.</p>
-          <p>Engineering, AI &amp; Aviation Advisory &mdash; GCC</p>
+          <p>&copy; {new Date().getFullYear()} The Bridge Consulting and Advisory Limited. All rights reserved.</p>
+          <p>Engineering, AI, Aviation &amp; Business Advisory &mdash; GCC</p>
         </div>
       </div>
     </footer>

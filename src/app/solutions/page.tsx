@@ -5,9 +5,9 @@ import LogoWatermark from "@/components/LogoWatermark";
 import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Solutions | The Bridge Consulting Group",
+  title: "Solutions | The Bridge Consulting and Advisory Limited",
   description:
-    "Our service portfolio — advisory programs structured by segment and capability area for the GCC defense ecosystem.",
+    "Our service portfolio — advisory programs structured by segment and capability area for the GCC technology and industrial ecosystem.",
 };
 
 export default function SolutionsPage() {

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Corporate marketing site for **The Bridge Consulting Group** (brand still referred to as "The Bridge" in some legacy assets — see logo note below) — a GCC advisory firm spanning engineering, AI, aviation, and defense. Next.js 16 (App Router, Turbopack) + TypeScript + Tailwind CSS v4. Deployed on Vercel as project `the-bridge-defense-accelerator` (Vercel project slug unchanged — renaming it is a separate infra decision), live at `thebridgeconsulting.ae`.
+Corporate marketing site for **The Bridge Consulting and Advisory Limited** (brand still referred to as "The Bridge" in some legacy assets — see logo note below) — a GCC advisory firm spanning engineering, AI, aviation, and defense. Next.js 16 (App Router, Turbopack) + TypeScript + Tailwind CSS v4. Deployed on Vercel as project `the-bridge-defense-accelerator` (Vercel project slug unchanged — renaming it is a separate infra decision), live at `thebridgeconsulting.ae`.
 
 ## Commands
 
@@ -34,7 +34,7 @@ Corporate marketing site for **The Bridge Consulting Group** (brand still referr
 - No pricing is ever shown — solutions are described by scope/value only, CTAs are "Contact Us" / "Request a Consultation".
 - `serviceBoundaryStatement` (footer, and the About page) must be reproduced verbatim — it's a compliance/legal statement, not copy to edit for tone.
 
-**Logo assets are pre-processed, not raw.** `public/logo.png` is the original lockup (solid black background). `logo-lockup-black/white.png` and `logo-mark-black/white.png` are transparent-background derivatives (generated via Python/Pillow, luminance-keyed) used by `src/components/Logo.tsx` (header/footer) and `src/components/LogoWatermark.tsx` (large low-key mark on hero banners, right side, `hidden lg:block`). If the source logo changes, regenerate these rather than hand-editing. **Intentional divergence:** these image assets render the "The Bridge" wordmark while page copy says "The Bridge Consulting Group" — the logo is staying as-is by decision, not a pending fix. Don't regenerate it to match the full legal name.
+**Logo assets are pre-processed, not raw.** `public/logo.png` is the original lockup (solid black background). `logo-lockup-black/white.png` and `logo-mark-black/white.png` are transparent-background derivatives (generated via Python/Pillow, luminance-keyed) used by `src/components/Logo.tsx` (header/footer) and `src/components/LogoWatermark.tsx` (large low-key mark on hero banners, right side, `hidden lg:block`). If the source logo changes, regenerate these rather than hand-editing. **Intentional divergence:** these image assets render the "The Bridge" wordmark while page copy says "The Bridge Consulting and Advisory Limited" — the logo is staying as-is by decision, not a pending fix. Don't regenerate it to match the full legal name.
 
 **`src/middleware.ts`** does two things: redirects any `www.*` host to the apex domain (308) — needed because DNS for `thebridgeconsulting.ae` is intentionally kept on the registrar (tasjeel.ae) rather than delegated to Vercel's nameservers, to avoid breaking existing MX/email records there — and enforces HTTP Basic Auth on `/admin/*` (see client registration note above).
 

@@ -14,7 +14,7 @@ export default function Home() {
             GCC Advisory Group
           </p>
           <h1 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
-            Engineering, AI &amp; Aviation Consulting for the GCC
+            Engineering, AI, Aviation &amp; Business Consulting for the GCC
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
             {tagline}
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-16 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-xl sm:text-2xl font-medium leading-snug text-black">
-              The Bridge Consulting Group is a pure advisory and
+              The Bridge Consulting and Advisory Limited is a pure advisory and
               program-management organization. Our value is independence,
               technical judgment, and execution discipline.
             </p>
@@ -44,7 +44,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="Who We Serve"
           title="Three Segments, One Bridge"
-          description="Distinct programs designed for the specific realities of each stakeholder in the GCC defense innovation ecosystem."
+          description="Distinct programs designed for the specific realities of each stakeholder in the GCC technology and industrial innovation ecosystem."
         />
 
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-px bg-black/10">
@@ -78,12 +78,12 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-28">
           <SectionHeading
             eyebrow="Capability Areas"
-            title="Six Domains of Expertise"
+            title="Four Domains of Expertise"
             description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
             inverted
           />
 
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/10">
+          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10">
             {domains.map((domain) => (
               <div key={domain.key} className="bg-bridge-charcoal p-6 sm:p-7">
                 <h3 className="text-lg font-semibold uppercase tracking-[0.15em]">
@@ -111,7 +111,7 @@ export default function Home() {
         </h2>
         <p className="mt-5 max-w-xl mx-auto text-black/60 leading-relaxed">
           Every engagement begins with a conversation. Reach out to discuss
-          where your organization stands and how The Bridge Consulting Group
+          where your organization stands and how The Bridge Consulting and Advisory Limited
           can help.
         </p>
         <div className="mt-8 flex justify-center">

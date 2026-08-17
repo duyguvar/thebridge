@@ -5,9 +5,9 @@ import LogoWatermark from "@/components/LogoWatermark";
 import { domains, serviceBoundaryStatement } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About | The Bridge Consulting Group",
+  title: "About | The Bridge Consulting and Advisory Limited",
   description:
-    "The Bridge Consulting Group is an independent GCC advisory firm spanning engineering, AI, aviation, and defense — mission, mandate, and service boundary.",
+    "The Bridge Consulting and Advisory Limited is an independent GCC advisory firm spanning engineering, AI, aviation, and business consultancy — mission, mandate, and service boundary.",
 };
 
 const principles = [
@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: "Technical Grounding",
-    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across LAND, AIR, NAVY, C4I, MUNITIONS, and AI Transformation capability areas.",
+    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across AI, TECH, AVIATION, and BUSINESS capability areas.",
   },
   {
     title: "Continuity",
@@ -31,7 +31,7 @@ export default function AboutPage() {
       <section className="relative bg-black text-white overflow-hidden flex items-center h-[280px] sm:h-[310px] lg:h-[340px]">
         <div className="w-full mx-auto max-w-8xl px-6 lg:px-10 py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/50 mb-6">
-            About The Bridge Consulting Group
+            About The Bridge Consulting and Advisory Limited
           </p>
           <h1 className="max-w-2xl text-3xl sm:text-4xl lg:text-5xl font-semibold uppercase leading-tight tracking-wide">
             An Independent GCC Advisory Group
@@ -52,9 +52,9 @@ export default function AboutPage() {
           <div>
             <SectionHeading eyebrow="Mission" title="Why We Exist" />
             <p className="mt-6 text-sm sm:text-base leading-relaxed text-black/70">
-              The GCC engineering, AI, aviation, and defense ecosystem sits
+              The GCC engineering, AI, aviation, and business ecosystem sits
               at the intersection of global technology, regional industrial
-              ambition, and national priorities. The Bridge Consulting Group
+              ambition, and national priorities. The Bridge Consulting and Advisory Limited
               exists to make that intersection navigable — providing
               independent, technically grounded
               advisory support to the organizations shaping it, without the
@@ -96,7 +96,7 @@ export default function AboutPage() {
       <section id="domains" className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-24 scroll-mt-24">
         <SectionHeading
           eyebrow="Capability Areas"
-          title="Six Domains of Expertise"
+          title="Four Domains of Expertise"
           description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
         />
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10">

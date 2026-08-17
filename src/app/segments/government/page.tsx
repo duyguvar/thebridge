@@ -5,7 +5,7 @@ import { segments } from "@/lib/data";
 const segment = segments.find((s) => s.id === "government")!;
 
 export const metadata: Metadata = {
-  title: "Government & Public Sector | The Bridge Consulting Group",
+  title: "Government & Public Sector | The Bridge Consulting and Advisory Limited",
   description: segment.summary,
 };
 

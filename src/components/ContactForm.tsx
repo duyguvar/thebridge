@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const segmentOptions = [
   "International Company Entering the GCC",
-  "GCC Defense Organization",
+  "GCC Organization",
   "Government & Public Sector",
   "Other",
 ];
@@ -22,7 +22,7 @@ export default function ContactForm() {
         </p>
         <p className="text-lg font-medium">
           Thank you for reaching out. A member of The Bridge Consulting
-          Group team will respond shortly.
+          and Advisory Limited team will respond shortly.
         </p>
       </div>
     );

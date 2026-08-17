@@ -10,17 +10,15 @@ type Status = "idle" | "submitting" | "success" | "error";
 const institutionTypes = [
   "Ministry",
   "Free Zone / Economic Development Authority",
-  "Defense Innovation Office",
+  "Innovation Office",
   "Other Government Entity",
 ];
 
 const sourcingCategoryOptions = [
-  "UAS Platforms & Components",
-  "Naval Systems & Sensors",
-  "Land Systems & Armored Vehicles",
-  "C4I & Secure Communications",
-  "Munitions & Guided Weapons",
-  "Avionics & Mission Systems",
+  "Aviation Platforms & Components",
+  "Engineering & Industrial Systems",
+  "Secure Communications & Systems Integration",
+  "Avionics & Flight Systems",
   "Cybersecurity & Information Systems",
   "AI/ML & Data Systems",
   "Other",
@@ -36,11 +34,9 @@ const preferredRegionOptions = [
 ];
 
 const priorityAreaOptions = [
-  "UAS Localization",
-  "Land Systems Localization",
-  "Naval Systems Localization",
-  "C4I & Secure Communications",
-  "Munitions & Guided Weapons Localization",
+  "Aviation Systems Localization",
+  "Engineering & Industrial Localization",
+  "Systems Integration & Secure Communications",
   "AI/ML Capability Building",
   "Workforce & Skills Development",
   "Other",
@@ -154,7 +150,7 @@ export default function RegisterForm() {
           Registration Received
         </p>
         <p className="text-lg font-medium">
-          Thank you for registering with The Bridge Consulting Group.
+          Thank you for registering with The Bridge Consulting and Advisory Limited.
           <br />
           Our team will review your submission and follow up.
         </p>
@@ -320,7 +316,7 @@ export default function RegisterForm() {
                 Company Capabilities
               </legend>
               <div
-                className={`grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 border px-4 py-4 ${
+                className={`grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 border px-4 py-4 ${
                   capabilityError ? "border-red-500" : "border-black/20"
                 }`}
               >

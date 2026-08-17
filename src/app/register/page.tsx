@@ -3,9 +3,9 @@ import LogoWatermark from "@/components/LogoWatermark";
 import RegisterForm from "@/components/RegisterForm";
 
 export const metadata: Metadata = {
-  title: "Register | The Bridge Consulting Group",
+  title: "Register | The Bridge Consulting and Advisory Limited",
   description:
-    "Register your organization with The Bridge Consulting Group — for international companies, GCC organizations, and government institutions.",
+    "Register your organization with The Bridge Consulting and Advisory Limited — for international companies, GCC organizations, and government institutions.",
 };
 
 export default function RegisterPage() {

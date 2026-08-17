@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import LogoWatermark from "@/components/LogoWatermark";
 import MapLink from "@/components/MapLink";
 
 export const metadata: Metadata = {
-  title: "Contact | The Bridge Consulting Group",
+  title: "Contact | The Bridge Consulting and Advisory Limited",
   description:
-    "Request a consultation with The Bridge Consulting Group to discuss your GCC engineering, AI, aviation, or defense priorities.",
+    "Request a consultation with The Bridge Consulting and Advisory Limited to discuss your GCC engineering, AI, aviation, or business advisory priorities.",
 };
 
 export default function ContactPage() {
@@ -41,6 +42,18 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold text-black">Email</p>
                 <p>contact@thebridgeconsulting.ae</p>
+              </div>
+              <div>
+                <p className="font-semibold text-black">Data Protection</p>
+                <p>
+                  For data protection inquiries or to exercise your data
+                  subject rights, contact privacy@thebridgeconsulting.ae or
+                  review our{" "}
+                  <Link href="/privacy-policy" className="underline hover:text-black">
+                    Privacy Policy
+                  </Link>
+                  .
+                </p>
               </div>
               <div>
                 <p className="font-semibold text-black">Response Time</p>

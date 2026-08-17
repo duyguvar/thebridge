@@ -23,7 +23,7 @@ export function middleware(request: NextRequest) {
     if (auth !== expected) {
       return new NextResponse("Authentication required.", {
         status: 401,
-        headers: { "WWW-Authenticate": 'Basic realm="The Bridge Consulting Group Admin"' },
+        headers: { "WWW-Authenticate": 'Basic realm="The Bridge Consulting and Advisory Limited Admin"' },
       });
     }
   }

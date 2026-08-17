@@ -18,18 +18,18 @@ export const segments: Segment[] = [
     slug: "international",
     shortName: "International Companies",
     name: "International Companies Entering the GCC",
-    tagline: "A structured path into one of the world's fastest-moving defense markets.",
+    tagline: "A structured path into one of the world's fastest-moving technology and industrial markets.",
     summary:
-      "For international defense, aerospace, dual-use, and advanced technology companies preparing to enter the GCC — with a priority corridor for Turkish industry, alongside a global mandate.",
+      "For international engineering, AI, aviation, and advanced technology companies preparing to enter the GCC — with a priority corridor for Turkish industry, alongside a global mandate.",
     audience: [
-      "Defense and aerospace OEMs and Tier 1/2 suppliers",
-      "Dual-use and advanced technology companies",
+      "Engineering, AI, and aviation OEMs and Tier 1/2 suppliers",
+      "Advanced technology and industrial companies",
       "Turkish industry seeking a structured GCC entry corridor",
-      "Global primes evaluating regional partnerships and offset obligations",
+      "Global companies evaluating regional partnerships and industrial participation obligations",
     ],
     challenges: [
-      "Opaque decision-making structures across GCC ministries and primes",
-      "Unclear localization, offset, and industrial participation requirements",
+      "Opaque decision-making structures across GCC ministries and industry leaders",
+      "Unclear localization and industrial participation requirements",
       "Difficulty identifying credible regional partners and integrators",
       "Absence of a single, continuous point of coordination across the market-entry lifecycle",
     ],
@@ -44,12 +44,12 @@ export const segments: Segment[] = [
     id: "gcc",
     slug: "gcc-organizations",
     shortName: "GCC Organizations",
-    name: "GCC Defense Organizations",
+    name: "GCC Organizations",
     tagline: "Independent, technically grounded advisory for the region's industrial base.",
     summary:
-      "For GCC-based defense companies, systems integrators, prime contractors, R&D centers, and investment arms building capability, evaluating technology, and derisking programs.",
+      "For GCC-based technology companies, systems integrators, industrial contractors, R&D centers, and investment arms building capability, evaluating technology, and derisking programs.",
     audience: [
-      "Regional prime contractors and systems integrators",
+      "Regional industrial contractors and systems integrators",
       "National R&D centers and innovation offices",
       "Sovereign and strategic investment arms",
       "Industrial and localization program owners",
@@ -72,14 +72,14 @@ export const segments: Segment[] = [
     slug: "government",
     shortName: "Government & Public Sector",
     name: "Government & Public Sector",
-    tagline: "Umbrella advisory support for institutions shaping national defense innovation.",
+    tagline: "Umbrella advisory support for institutions shaping national technology and industrial innovation.",
     summary:
-      "For ministries, free zones, economic development authorities, and defense innovation offices designing the frameworks that govern industry engagement, innovation competitions, and pilots.",
+      "For ministries, free zones, economic development authorities, and innovation offices designing the frameworks that govern industry engagement, innovation competitions, and pilots.",
     audience: [
-      "Ministries of defense and economic affairs",
+      "Ministries of economic affairs and technology",
       "Free zones and special economic zones",
       "Economic development authorities",
-      "Defense innovation and technology offices",
+      "Innovation and technology offices",
     ],
     challenges: [
       "Need for an independent advisory partner not aligned to any single vendor or bidder",
@@ -237,7 +237,7 @@ export const products: Product[] = [
     name: "BridgeGov™",
     segments: ["government"],
     category: "Long-Term Advisory",
-    summary: "A long-term, umbrella advisory relationship providing continuous, independent support across an institution's defense priorities.",
+    summary: "A long-term, umbrella advisory relationship providing continuous, independent support across an institution's technology and industrial priorities.",
     scope: [
       "Standing advisory relationship across multiple initiatives",
       "Cross-initiative coordination and continuity",
@@ -287,7 +287,7 @@ export const products: Product[] = [
     name: "BridgeLab™",
     segments: "cross",
     category: "Core Training Product",
-    summary: "A core training program design that builds foundational defense-sector knowledge and capability, applicable across any segment.",
+    summary: "A core training program design that builds foundational engineering, AI, and aviation-sector knowledge and capability, applicable across any segment.",
     scope: [
       "Foundational curriculum design",
       "Delivery format and cohort structuring",
@@ -317,58 +317,8 @@ export interface Domain {
 
 export const domains: Domain[] = [
   {
-    key: "land",
-    name: "LAND",
-    description: "Ground systems capability areas spanning platforms, protection, and mobility.",
-    capabilities: [
-      "Armored vehicle systems",
-      "Ground platform sub-systems and protection technologies",
-      "Logistics and mobility support systems",
-    ],
-  },
-  {
-    key: "air",
-    name: "AIR",
-    description: "Aviation and unmanned systems capability areas across platforms and supporting technology.",
-    capabilities: [
-      "UAS platforms & sub-systems",
-      "Avionics and mission systems",
-      "Airbase and sustainment support capability",
-    ],
-  },
-  {
-    key: "navy",
-    name: "NAVY",
-    description: "Maritime capability areas covering surface, subsurface, and supporting systems.",
-    capabilities: [
-      "Naval sensor integration",
-      "Surface and subsurface platform systems",
-      "Maritime C4I and combat system integration",
-    ],
-  },
-  {
-    key: "c4i",
-    name: "C4I",
-    description: "Command, control, communications, computers, and intelligence capability areas.",
-    capabilities: [
-      "Tactical data-link software",
-      "Command and control system integration",
-      "Secure communications and information systems",
-    ],
-  },
-  {
-    key: "munitions",
-    name: "MUNITIONS",
-    description: "Munitions-related capability areas focused on components, guidance, and supporting technology.",
-    capabilities: [
-      "Guided munitions components",
-      "Fuzing and guidance sub-systems",
-      "Munitions testing and qualification support",
-    ],
-  },
-  {
     key: "ai",
-    name: "AI TRANSFORMATION",
+    name: "AI",
     description: "AI-enabled transformation capability areas spanning applied adoption, data readiness, and decision-support systems.",
     capabilities: [
       "AI/ML capability building and adoption roadmaps",
@@ -376,10 +326,40 @@ export const domains: Domain[] = [
       "AI-enabled decision-support and analytics integration",
     ],
   },
+  {
+    key: "tech",
+    name: "TECH",
+    description: "Engineering and technology capability areas spanning systems integration, certification, and applied R&D.",
+    capabilities: [
+      "Systems engineering and technical certification support",
+      "Technology integration and standards compliance",
+      "Applied R&D and innovation program design",
+    ],
+  },
+  {
+    key: "aviation",
+    name: "AVIATION",
+    description: "Aviation capability areas across platforms, systems, and supporting infrastructure.",
+    capabilities: [
+      "Aviation platforms and sub-systems",
+      "Avionics and flight systems",
+      "Airbase and sustainment support capability",
+    ],
+  },
+  {
+    key: "business",
+    name: "BUSINESS",
+    description: "Business advisory capability areas spanning market entry, partnership structuring, and institutional strategy.",
+    capabilities: [
+      "Market entry and localization strategy",
+      "Joint-venture and partnership governance",
+      "Institutional and program advisory",
+    ],
+  },
 ];
 
 export const serviceBoundaryStatement =
-  "The Bridge Consulting Group provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
+  "The Bridge Consulting and Advisory Limited provides advisory, assessment, training, and capability-building services only. The company does not engage in defense trading, procurement brokerage, regulated product representation, import/export of defense goods, or commission-based sales activity.";
 
 export const tagline =
-  "The Bridge Consulting Group is a GCC advisory firm spanning engineering, AI, aviation, and defense — connecting global technology providers, regional industry needs, and government priorities.";
+  "The Bridge Consulting and Advisory Limited is a GCC advisory firm spanning engineering, AI, aviation, and business consultancy — connecting global technology providers, regional industry needs, and government priorities.";
