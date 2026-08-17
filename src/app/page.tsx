@@ -78,12 +78,12 @@ export default function Home() {
         <div className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-28">
           <SectionHeading
             eyebrow="Capability Areas"
-            title="Four Domains of Expertise"
+            title="Three Domains of Expertise"
             description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
             inverted
           />
 
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10">
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10">
             {domains.map((domain) => (
               <div key={domain.key} className="bg-bridge-charcoal p-6 sm:p-7">
                 <h3 className="text-lg font-semibold uppercase tracking-[0.15em]">

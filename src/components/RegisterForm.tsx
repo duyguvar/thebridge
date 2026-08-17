@@ -316,7 +316,7 @@ export default function RegisterForm() {
                 Company Capabilities
               </legend>
               <div
-                className={`grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 border px-4 py-4 ${
+                className={`grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 border px-4 py-4 ${
                   capabilityError ? "border-red-500" : "border-black/20"
                 }`}
               >

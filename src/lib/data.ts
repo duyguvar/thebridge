@@ -327,33 +327,25 @@ export const domains: Domain[] = [
     ],
   },
   {
-    key: "tech",
-    name: "TECH",
-    description: "Engineering and technology capability areas spanning systems integration, certification, and applied R&D.",
-    capabilities: [
-      "Systems engineering and technical certification support",
-      "Technology integration and standards compliance",
-      "Applied R&D and innovation program design",
-    ],
-  },
-  {
-    key: "aviation",
-    name: "AVIATION",
-    description: "Aviation capability areas across platforms, systems, and supporting infrastructure.",
+    key: "aviation-engineering",
+    name: "AVIATION & ENGINEERING",
+    description: "Aviation and engineering capability areas spanning platforms, systems integration, certification, and applied R&D.",
     capabilities: [
       "Aviation platforms and sub-systems",
       "Avionics and flight systems",
       "Airbase and sustainment support capability",
+      "Systems engineering, technical certification, and applied R&D",
     ],
   },
   {
-    key: "business",
-    name: "BUSINESS",
-    description: "Business advisory capability areas spanning market entry, partnership structuring, and institutional strategy.",
+    key: "management-business",
+    name: "MANAGEMENT & BUSINESS CONSULTANCY AND SOLUTIONS",
+    description: "Management and business advisory capability areas spanning market entry, partnership structuring, institutional strategy, and solutions design.",
     capabilities: [
       "Market entry and localization strategy",
       "Joint-venture and partnership governance",
       "Institutional and program advisory",
+      "Program and solutions design across engagements",
     ],
   },
 ];

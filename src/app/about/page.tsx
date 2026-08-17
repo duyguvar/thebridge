@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: "Technical Grounding",
-    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across AI, TECH, AVIATION, and BUSINESS capability areas.",
+    body: "Every assessment, roadmap, and recommendation is rooted in domain expertise across AI, Aviation & Engineering, and Management & Business Consultancy and Solutions capability areas.",
   },
   {
     title: "Continuity",
@@ -96,10 +96,10 @@ export default function AboutPage() {
       <section id="domains" className="mx-auto max-w-8xl px-6 lg:px-10 py-20 sm:py-24 scroll-mt-24">
         <SectionHeading
           eyebrow="Capability Areas"
-          title="Four Domains of Expertise"
+          title="Three Domains of Expertise"
           description="Our advisory work spans the full breadth of these capability areas — grounded in technical understanding, not sales targets."
         />
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-px bg-black/10">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10">
           {domains.map((domain) => (
             <div key={domain.key} className="bg-white p-8 sm:p-10">
               <span className="text-xs font-semibold uppercase tracking-[0.3em] text-black/40">
